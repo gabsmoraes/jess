@@ -1302,7 +1302,8 @@ Hero
 
 #hero {
 	display: table-cell;
-	filter: brightness(40%)
+	filter: brightness(40%);
+	background-position: 58% 0px;
 }
 
 
@@ -1312,12 +1313,6 @@ Hero
 	background-position: 41% 0px;
 }
 
-#hero:active , #hero2:active {
-	width: 100%;
-	display: table-cell;
-	filter: brightness(40%);
-		animation-timing-function: ease-in-out;
-}
 
 #hero:hover , #hero2:hover {
 	filter: brightness(100%);

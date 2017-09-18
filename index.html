@@ -40,10 +40,21 @@
 	<!-- /PRELOADER -->
 
 
+
+		<div>
+			<i id="hero-close" class="fa fa-times	" aria-hidden="true" style="position: absolute; z-index: 9999; color: #fafafa; margin-left: 10px; margin-top: 10px; font-size: 24px; display: none;"></i>
+		</div>
+
+		<div>
+			<i id="hero2-close" class="fa fa-times	" aria-hidden="true" style="position: absolute; z-index: 9999; color: #fafafa; margin-right: 10px; margin-top: 10px; font-size: 24px; display: none; float: right;"></i>
+		</div>
+
+
 	<div style="display: table; table-layout: fixed; width: 100%;">
 
 		<!-- HERO -->
-		<section id="hero" class="module-hero module-parallax module-full-height bg-light-30" data-background="assets/images/background-test1.jpg">
+		<section id="hero" class="module-hero  module-full-height bg-light-30" data-background="assets/images/background-test1.jpg">
+
 
 			<!-- HERO TEXT -->
 			<div class="hero-caption">
@@ -109,6 +120,45 @@
 	<script src="assets/js/gmaps.js"></script>
 	<script src="assets/js/contact.js"></script>
 	<script src="assets/js/custom.js"></script>
+
+	<script type="text/javascript">
+
+		jQuery("#hero2").click(function(){
+			
+			jQuery("#hero2").animate({width: '100%'},{easing: "swing", duration: 3000});
+			jQuery("#hero2-close").show();
+
+		});
+
+		jQuery("#hero").click(function(){
+			
+			jQuery("#hero").animate({width: '100%'},{easing: "swing", duration: 3000});
+			jQuery("#hero-close").show();
+
+		});
+
+		jQuery("#hero-close").click(function(){
+			
+			jQuery("#hero").animate({width: '50%'});
+			jQuery("#hero-close").hide();
+
+		});
+
+		jQuery("#hero2-close").click(function(){
+			
+			jQuery("#hero2").animate({width: '50%'});
+			jQuery("#hero2-close").hide();
+
+		});
+
+
+
+
+
+	</script>
+
+
+
 
 </body>
 </html>
